@@ -1,0 +1,123 @@
+:root{
+    --main-color:#5783db;
+    --second-color:#55c2da;
+    --border-rad:15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.game{
+    height: 100vh;
+    background-color: #eee;
+}
+
+.name{
+    background-color: var(--main-color);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+form{
+    margin-top: 10px;
+}
+form label{
+    font-size: 30px;
+    margin-top: 5px;
+}
+form select {
+    padding: 10px;
+    border-radius: var(--border-rad);
+    border: none;
+
+
+}
+form select:focus{
+    outline: none;
+}
+.container{
+    margin: auto;
+    max-width: 900px;
+    text-align: center;
+}
+.message{
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: var(--border-rad);
+}
+.start{
+    background-color: var(--second-color);
+    padding: 15px;
+    margin: 10px;
+    border-radius: var(--border-rad);
+    cursor: pointer;
+}
+.the-word{
+    background-color: var(--second-color);
+    padding: 15px;
+    margin: 10px;
+    border-radius: var(--border-rad);
+    font-size: 40px;
+    display: none;
+}
+.input{
+    width: 97%;
+    display: block;
+    padding: 15px;
+    border: 2px solid var(--main-color);
+    margin: 10px;
+    caret-color: var(--main-color);
+    text-align: center;
+    font-size: 30px;
+}
+.input:focus{
+    outline: none;
+}
+.upcoming-words{
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: var(--border-rad);
+}
+.control{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: var(--border-rad);
+}
+
+.upcoming-words div{
+    display: inline-block;
+    background: var(--main-color);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.finish{
+    padding: 15px;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 40px;
+    display: none;
+}
+
+.start-again{
+    background-color: var(--second-color);
+    padding: 15px;
+    margin: 10px;
+    border-radius: var(--border-rad);
+    cursor: pointer;
+    display: none;
+}
